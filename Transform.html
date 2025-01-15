@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe Animation Example</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #4caf50;
+            animation: moveAndChangeColor 3s infinite; /* Apply keyframes */
+        }
+
+        @keyframes moveAndChangeColor {
+            0% {
+                transform: translateX(0); /* Starts at initial position */
+                background-color: #4caf50; /* Initial color */
+            }
+            50% {
+                transform: translateX(200px); /* Move right 200px */
+                background-color: #ff5733; /* Change color to red */
+            }
+            100% {
+                transform: translateX(1200px); /* Back to initial position */
+                background-color: #c03897; /* Back to initial color */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

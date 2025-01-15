@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+       
+        .btn-dropdown {
+            width: 200px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 3s;
+
+        }
+        .btn-dropdown:hover {
+            background-color: #b9a129;
+          transform: scale(1.1);
+        }
+        .afterdropdown {
+           display: none;
+           position: absolute;
+            background-color: #34495e;
+            border-radius: 5px;
+            padding: 10px;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            z-index: 1;
+            text-align: center;
+        }
+        .afterdropdown a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 10px;
+        }
+        .afterdropdown a:hover {
+            background-color: #2c3e50;
+        }
+        .dropdown:hover .afterdropdown{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="btn-dropdown">DropDown</button>
+        <div class="afterdropdown">
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Sign-in</a>
+        </div>
+    </div>
+</body>
+</html>
